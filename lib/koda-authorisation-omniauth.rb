@@ -31,8 +31,7 @@ module Koda
         if requires_authentication request
           if session[:user_id]
             user = User.find(session[:user_id])
-            # TODO: get authorisation info from user
-            env['koda_user'] =  {isadmin: true, isallowed: true, alias: user.name}
+            env['koda_user'] =  user
           else
             redirect normalise_path '/auth/login'
           end
