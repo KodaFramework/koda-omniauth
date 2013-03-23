@@ -3,7 +3,7 @@ require 'omniauth'
 require 'koda-content/models/user'
 
 module Koda
-  module Authorisation
+  module Auth
     class OmniAuthIntegration < Sinatra::Base
       use Rack::Session::Cookie
 

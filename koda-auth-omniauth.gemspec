@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'koda-authorisation-omniauth/version'
+require 'koda-auth-omniauth/version'
 
 Gem::Specification.new do |s|
-  s.name        = "koda-authorisation-omniauth"
-  s.version     = Koda::Authorisation::OmniAuth::VERSION
+  s.name        = "koda-auth-omniauth"
+  s.version     = Koda::Auth::OmniAuth::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Marcel du Prez", "Derek Ekins"]
   s.email       = ["marceldupr@gmail.com", "derek@spathi.com"]
