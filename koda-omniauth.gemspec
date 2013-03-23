@@ -21,8 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra'
   s.add_dependency 'koda-content'
 
-  s.add_development_dependency 'rspec', '>= 2.8'
-  s.add_development_dependency 'rack-test'
   s.add_development_dependency 'rake'
 
   s.files        = Dir.glob("{lib}/**/*")
