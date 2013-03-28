@@ -18,6 +18,13 @@ module Koda
         end
       end
 
+      post '/auth/developer/callback' do
+        auth = request.env['omniauth.auth']
+        user = Koda::User.create_or_load provider: auth.provider, uid: auth.uid, name: auth.info.name, email: auth.info.email
+        session[:user_id] = user._id
+        redirect normalise_path '/'
+      end if settings.environment == :development
+
       def normalise_path(path)
         prefix = request.script_name
         "#{prefix}#{path}"
