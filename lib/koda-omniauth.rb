@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'omniauth'
-require 'koda-content/models/user'
+require 'koda-api/models/user'
 
 module Koda
   module Auth

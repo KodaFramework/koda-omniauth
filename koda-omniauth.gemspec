@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'omniauth'
   s.add_dependency 'omniauth-github'
   s.add_dependency 'sinatra'
-  s.add_dependency 'koda-content'
+  s.add_dependency 'koda-api'
 
   s.add_development_dependency 'rake'
 
